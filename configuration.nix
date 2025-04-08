@@ -19,6 +19,7 @@ in {
 
 	environment.systemPackages = with pkgs; [
 		flatpak
+		xdg-desktop-portal-gtk
 	];
 
 	systemd.services.flatpak-repo = {
