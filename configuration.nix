@@ -18,6 +18,8 @@ in {
 	'';
 
 	environment.systemPackages = with pkgs; [
+		coreutils
+		util-linux
 		flatpak
 		xdg-desktop-portal-gtk
 	];
