@@ -7,13 +7,10 @@ let
 in {
 	system.activationScripts.flatpak = ''
 		export PATH=${pkgs.flatpak}/bin:${pkgs.coreutils}/bin:${pkgs.util-linux}/bin:$PATH
-		flatpak install -y flathub md.obsidian.Obsidian
 		flatpak install -y flathub com.slack.Slack
-		flatpak install -y flathub org.videolan.VLC
 		flatpak install -y flathub com.obsproject.Studio
 		flatpak install -y flathub org.gimp.GIMP
 		flatpak install -y flathub com.vscodium.codium
-		flatpak install -y flathub org.shotcut.Shotcut
 		flatpak install -y flathub com.discordapp.Discord
 	'';
 
