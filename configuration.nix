@@ -7,10 +7,7 @@ let
 in {
 	system.activationScripts.flatpak = ''
 		export PATH=${pkgs.flatpak}/bin:${pkgs.coreutils}/bin:${pkgs.util-linux}/bin:$PATH
-		flatpak install -y flathub com.slack.Slack
 		flatpak install -y flathub com.obsproject.Studio
-		flatpak install -y flathub org.gimp.GIMP
-		flatpak install -y flathub com.vscodium.codium
 	'';
 
 	environment.systemPackages = with pkgs; [
