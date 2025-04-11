@@ -11,7 +11,6 @@ in {
 		flatpak install -y flathub com.obsproject.Studio
 		flatpak install -y flathub org.gimp.GIMP
 		flatpak install -y flathub com.vscodium.codium
-		flatpak install -y flathub com.discordapp.Discord
 	'';
 
 	environment.systemPackages = with pkgs; [
